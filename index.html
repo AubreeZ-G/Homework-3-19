@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Coding Quiz</title>
+</head>
+
+<body>
+  <button id="start">Start</button>
+  <h1 class="time" style="text-align:center;"></h1>
+  <div id="main"></div>
+
+  <div class="card" id="VisableQuestions">
+    <h2>Coding Quiz</h2>
+    <form>
+      <ul class="Question1">
+        What is an Array?
+
+        <li>
+          <label>Answer</label>
+          <select id="Question1">
+            <option value="A"> a data structure, which can store a fixed-size collection of elements of the same data
+              type.</option>
+            <option>is an expression that evaluates to either true or false.</option>
+            <option>a “chunk” of code that you can use over and over again, rather than writing it out
+              multiple times</option>
+          </select>
+          <button id="submit1">Submit</button>
+        </li>
+
+      </ul>
+
+      <ul id="Question2">
+
+        <label for="msg">What is the most common programming language?</label>
+        <textarea id="Javascript" name="comments"></textarea>
+        <button id="submit2">Submit</button>
+
+      </ul>
+
+      <ul id="Question3">
+        <li>
+          <label for="name">Which is not a type of primitive data?</label>
+          <select id="Primitive">
+            <option>Number</option>
+            <option>Boolean</option>
+            <option>String</option>
+            <option value="Listener">Event Listener</option>
+          </select>
+        </li>
+        <button id="submit3">Submit</button>
+      </ul>
+    </form>
+  </div>
+  <h3 class="message"></h3>
+
+  <textarea id="initials" cols="30" rows="10" placeholder="enter initials"></textarea>
+<p id="win">You Win!!!</p>
+  <p id="grade"></p>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
